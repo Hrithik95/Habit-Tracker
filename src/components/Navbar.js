@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { addHabit } from "../redux/features/habitSlice";
+import { toast } from 'react-toastify';
 
 const Navbar = ({ name }) => {
   // call use dispatch hook a variable call dispatch
@@ -15,10 +16,11 @@ const Navbar = ({ name }) => {
   }, []);
   
   // function for add habit 
-  const handleSave=()=>{
+  const handleSave=(e)=>{
+    e.preventDefault();
     const habitName=document.getElementById("habitName").value;
     dispatch(addHabit(habitName));
-    alert("Your habit added successfully");
+    toast.success("Your habit added successfully");
     document.getElementById("habitName").value="";
   }
 
@@ -31,7 +33,7 @@ const Navbar = ({ name }) => {
             ? "Morning"
             : hour <= 16
             ? "Afternoon"
-            : hour <= 20
+            : hour < 20
             ? "Evening"
             : "Night"}
         </h3>
