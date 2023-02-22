@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/Habit-Tracker/static/css/main.9ac0f4e8.css",
-    "main.js": "/Habit-Tracker/static/js/main.202d7ae2.js",
+    "main.js": "/Habit-Tracker/static/js/main.220c2f56.js",
     "index.html": "/Habit-Tracker/index.html",
     "main.9ac0f4e8.css.map": "/Habit-Tracker/static/css/main.9ac0f4e8.css.map",
-    "main.202d7ae2.js.map": "/Habit-Tracker/static/js/main.202d7ae2.js.map"
+    "main.220c2f56.js.map": "/Habit-Tracker/static/js/main.220c2f56.js.map"
   },
   "entrypoints": [
     "static/css/main.9ac0f4e8.css",
-    "static/js/main.202d7ae2.js"
+    "static/js/main.220c2f56.js"
   ]
 }
